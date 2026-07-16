@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My One and Only Emma</title>
+
+<style>
+body{
+    background:#000;
+    color:white;
+    font-family:Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    text-align:center;
+}
+.box{
+    max-width:500px;
+}
+input{
+    padding:12px;
+    width:250px;
+    border-radius:8px;
+    border:none;
+}
+button{
+    padding:12px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>❤️ Welcome Emma ❤️</h1>
+    <p>Enter the secret code</p>
+
+    <input type="password" id="code" placeholder="Secret Code">
+    <br><br>
+
+    <button onclick="checkCode()">Open My Gift</button>
+
+    <p id="message"></p>
+</div>
+
+<script>
+function checkCode() {
+    const code = document.getElementById("code").value;
+
+    if(code === "6/M/2026"){
+        window.location.href =
+        "https://deadpan-cello-12a.notion.site/My-One-and-Only-Emma-39df00e698868052aeb4f65926caa144?pvs=149";
+    } else {
+        document.getElementById("message").innerHTML =
+        "❌ Incorrect code";
+    }
+}
+</script>
+
+</body>
+</html>
